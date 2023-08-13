@@ -27,7 +27,7 @@ time_t time_hook(time_t *tloc) {
 
 %ctor {
 	MSHookFunction(CNCopyCurrentNetworkInfo, (void *)&CNCopyCurrentNetworkInfo_hook, (void **)&CNCopyCurrentNetworkInfo_orig);
-	MSHookFunction(CNCopyCurrentNetworkInfo, (void *)&CNCopyCurrentNetworkInfo_hook, (void **)&CNCopyCurrentNetworkInfo_orig);
+	MSHookFunction(SCNetworkReachabilityGetFlags, (void *)&SCNetworkReachabilityGetFlags_hook, (void **)&SCNetworkReachabilityGetFlags_orig);
 	MSHookFunction(CFAbsoluteTimeGetCurrent, (void *)&CFAbsoluteTimeGetCurrent_hook, (void **)&CFAbsoluteTimeGetCurrent_orig);
 	MSHookFunction(time, (void *)&time_hook, (void **)&time_orig);
 }
