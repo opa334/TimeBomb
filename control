@@ -1,5 +1,5 @@
 Package: com.opa334.timebomb
-Name: Time Bomb
+Name: TimeBomb
 Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Spinlock timeout with ease!
