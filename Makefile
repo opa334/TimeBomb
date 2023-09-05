@@ -7,6 +7,7 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = TimeBomb
 
 TimeBomb_FILES = Tweak.x
-TimeBomb_CFLAGS = -fobjc-arc -DTHEOS_LEAN_AND_MEAN
+TimeBomb_CFLAGS = -fobjc-arc
+TimeBomb_FRAMEWORKS = Foundation CoreServices
 
 include $(THEOS_MAKE_PATH)/tweak.mk
